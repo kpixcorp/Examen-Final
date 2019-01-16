@@ -1,1 +1,33 @@
-style.css
+body {
+	margin: 0;
+	font-family: 'Muli', sans-serif;
+}
+
+.headbrand {
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/headimg.png);
+	background-size: cover;
+	height: 300px;
+	position: relative;
+
+}
+
+.headbrand p {
+	color: white;
+}
+
+.headbrand__menu { 
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	right: 30px;
+}
+
+.headbrand__menu li {
+	display: inline-block;
+	color: white;
+	padding: 5px;
+	margin: 2px;
+	font-size: 1em;
+}
