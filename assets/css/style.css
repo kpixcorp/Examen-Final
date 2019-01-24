@@ -3,6 +3,7 @@
 ::-webkit-scrollbar {
   width: 10px;
   opacity: 0.7;
+  background-color: rgba(255,255,255,0.2);
 }
 
 ::-webkit-scrollbar-track {
@@ -13,8 +14,8 @@
   background: grey; 
   border-radius: 10px;
   opacity: 0.6;
-
 }
+
 
 /* -- 1 MEDIA -- */
 
@@ -23,6 +24,7 @@
 	body {
 		margin: 0;
 		font-family: 'Muli', sans-serif;
+		background-color: black;
 	}
 
 	.row {
@@ -36,14 +38,14 @@
 		padding: 0;
 		background-image: url(../img/headimg3.png);
 		background-size: cover;
-		height: 350px;
+		height: 250px;
 		position: relative;
 
 	}
 
 	.header__brand img {
 		margin: 15px;
-		width: 140px;
+		width: 130px;
 	}
 
 	.headbrand p {
@@ -88,6 +90,7 @@
 
 	.video {
 		background-color: black;
+		margin: 30px 0;
 	}
 
 
@@ -97,7 +100,7 @@
 	}
 
 	.content {
-		margin: 0;
+		margin: 0 0 50px;
 		height: 600px;
 
 	}
@@ -197,28 +200,27 @@
 
 	.gallery {
 		background-color: black;
-		height: 800px;
-		padding: 10px 20px;
+		height: 600px;
+		padding: 70px 0;
 	}
 
 	.gallery__mainphoto {
-		padding: 15px;
-		height: 100%;
 		text-align: center;
+		height: 100%;
 	}
 
 	.gallery__mainphoto img{
-		width: 95%;
+		max-width: 100%;
+		max-height: 100%;
 	}
 
 	.gallery__sidephotos {
 		text-align: center;
-		padding: 0;
 		height: 100%;
 		overflow: auto;
 	}
 
-	.sidephotos__items {
+	.sidephotos__items ul {
 		height: 100%;
 		padding: 0;
 		list-style: none;
@@ -240,8 +242,13 @@
 	/* -- FOOTER -- */
 
 	.footer__info {
-		background-color: white;
-		padding: 30px;
+		background-color: black;
+		padding: 40px 20px 10px;
+		color: white;
+	}
+
+	.footer__info p{
+		font-size: 0.7em;
 	}
 
 }
@@ -255,6 +262,7 @@
 	body {
 		margin: 0;
 		font-family: 'Muli', sans-serif;
+		background-color: black;
 	}
 
 	.row {
@@ -268,14 +276,14 @@
 		padding: 0;
 		background-image: url(../img/headimg3.png);
 		background-size: cover;
-		height: 350px;
+		height: 250px;
 		position: relative;
 
 	}
 
 	.header__brand img {
 		margin: 15px;
-		width: 140px;
+		width: 130px;
 	}
 
 	.headbrand p {
@@ -296,7 +304,7 @@
 	.brand__menu li {
 		display: inline-block;
 		padding: 5px;
-		margin: 5px;
+		margin: 3px;
 	}
 
 	.brand__menu a {
@@ -424,17 +432,59 @@
 	}
 
 
-	/* -- FIN BODY -- */
-
-	/* -- FOOTER -- */
-
-	.footer {
-		padding: 20px;
+	.gallery {
+		background-color: black;
+		height: 800px;
+		padding: 10px 20px;
+		margin: 40px 0;
 	}
 
+	.gallery__mainphoto {
+		padding: 20px;
+		height: 100%;
+		text-align: center;
+	}
+
+	.gallery__mainphoto img{
+		width: 95%;
+	}
+
+	.gallery__sidephotos {
+		text-align: center;
+		padding: 0;
+		height: 100%;
+		overflow: auto;
+	}
+
+	.sidephotos__items {
+		height: 100%;
+		padding: 0;
+		list-style: none;
+	}
+
+	.sidephotos__items li{
+		text-align: center;
+		height: 20%;
+		margin: 20px;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.sidephotos__items img {
+		width: 100%;
+	}
+
+	/* -- FIN BODY -- */
+	/* -- FOOTER -- */
+
 	.footer__info {
-		background-color: white;
-		padding: 30px;
+		background-color: red;
+		padding: 40px 20px 10px;
+		color: white;
+	}
+
+	.footer__info p{
+		font-size: 0.7em;
 	}
 
 }
