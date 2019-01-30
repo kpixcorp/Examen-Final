@@ -36,6 +36,15 @@ body {
 	height: 250px;
 	position: relative;
 
+}	
+
+.brand__krustyburguer a i{
+	font-size: 5rem;
+	margin: 10px 45px;
+	color: black;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 9px;
 }
 
 .header__brand img {
@@ -68,6 +77,7 @@ body {
 	font-size: 1.2em;
 	opacity: 0.7;
 	color: black;
+	padding: 0 10px;
 }
 
 .brand__menu a:hover {
@@ -77,6 +87,7 @@ body {
 	opacity: 0.7;
 	transition: 1.2s;
 	border-radius: 2px;
+	padding: 0 10px;
 }
 
 /* -- FIN HEADER -- */
@@ -124,6 +135,7 @@ body {
 	background-color: blue;
 	box-sizing: border-box;
 	padding: 0;
+	margin-bottom: 20px;
 }
 
 .content__rightside img {
@@ -195,47 +207,47 @@ body {
 
 .gallery {
 	background-color: black;
-	height: 800px;
-	padding: 70px 0;
+	padding: 50px 0;
 	margin-right: 10px;
+	height: auto;
 }
 
 .gallery__mainside {
-	text-align: center;
 	height: 100%;
 }
 
-.gallery__mainside img{
-	max-width: 100%;
-	max-height: 100%;
+.mainside_main{
+	min-height: 600px;
 }
+
+.mainside__img {
+	height: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+.mainside__img img{
+	max-height:400px;
+	margin: 0;
+	display: inline;
+}
+
 
 .mainside_side {
-	text-align: center;
-	height: 100%;
-	padding: 0;
-
-}
-
-.sidephotos__items{
-	list-style: none;
-}
-
-.sidephotos__items {
 	list-style: none;
 	text-align: center;
-	padding: 20px;
-	height: 100%;
+	padding: 5px;
+	max-height: 400px;
 	overflow: auto;
 }
 
-.sidephotos__items li {
-	margin: 20px;
+.mainside_side li {
+	margin: 0 0 20px;
 
 }
 
-.sidephotos__items li img {
-	max-width: 100%;
+.mainside_side li img {
+	width: 90%;
 
 }
 
@@ -253,12 +265,48 @@ body {
 }
 
 
+@media screen and (min-width: 900px) {
+	.brand__krustyburguer{
+	display: none;
+	}
+}
 
-	
-@media (max-width: 992px) {
+@media screen and (max-width: 900px) {
+	.brand__menu { 
+		left: 5px;
+		top: 170px;
+		z-index: 100;
+		width: 400px;
+	}
+
+	.brand__menu li {
+		display: block;
+		background-color: rgba(255,255,255,0.9);
+		padding: 20px;
+		border-radius: 10px;
+	}
+
+	.brand__menu a {
+		font-size: 2rem;
+		text-decoration: none;
+	}
+
+	.brand__menu li:hover {
+		background-color: rgba(0,20,0,0.9);
+		color: white;
+		opacity: 0.7;
+		transition: 1.2s;
+		border-radius: 2px;
+	}
+
+	.brand__menu span {
+		display: none;
+	}	
+
+}
 
 
-
+@media screen and (max-width: 992px) {
 
 	.content {
 	margin: 0 0 50px;
@@ -289,27 +337,6 @@ body {
 		text-align: center;
 		filter: grayscale(80%);
 		background-size: cover;
-	}
-
-	.gallery {
-		padding: 20px 0;
-		height: auto;
-	}
-
-	.gallery__mainphoto {
-		text-align: center;
-		max-height: 600px;
-		margin-top: 50px;
-	}
-
-	.gallery__sidephotos {
-		text-align: center;
-		width: 80%;
-		max-height: 300px;
-		margin-left: 10%;
-		margin-top: 30px;
-		overflow: auto;
-
 	}
 }
 
