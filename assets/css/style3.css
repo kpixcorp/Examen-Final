@@ -70,7 +70,17 @@ body {
 .brand__menu li {
 	display: inline-block;
 	padding: 5px;
-	margin: 3px;
+	margin: 0 3px;
+}
+
+.brand__menu li:hover {
+	color: white;
+	background-color: black;
+	opacity: 0.7;
+	transition: 1.2s;
+	border-radius: 2px;
+	padding: 5px;
+
 }
 
 .brand__menu a {
@@ -80,14 +90,9 @@ body {
 	padding: 0 10px;
 }
 
-.brand__menu a:hover {
-	display: inline-block;
-	color: white;
-	background-color: black;
-	opacity: 0.7;
-	transition: 1.2s;
-	border-radius: 2px;
-	padding: 0 10px;
+.brand__menu span {
+	font-size: 2rem;
+	margin: 0;
 }
 
 /* -- FIN HEADER -- */
@@ -281,22 +286,30 @@ body {
 
 	.brand__menu li {
 		display: block;
+		margin: 5px 0;
+	}
+
+	.brand__menu a {
+		display: inline-block;
 		background-color: rgba(255,255,255,0.9);
-		padding: 20px;
 		border-radius: 10px;
+		border: 1px solid rgba(0,20,0,0.9);
+		padding: 10px;
+		opacity: 1;
+		width: 100%;
+	}
+
+	.brand__menu a:hover {
+		background-color: rgba(0,20,0,0.9);
+		transition: 1.2s;
+		color: white;
+		padding: 10px;
+		opacity: 1;
 	}
 
 	.brand__menu a {
 		font-size: 2rem;
 		text-decoration: none;
-	}
-
-	.brand__menu li:hover {
-		background-color: rgba(0,20,0,0.9);
-		color: white;
-		opacity: 0.7;
-		transition: 1.2s;
-		border-radius: 2px;
 	}
 
 	.brand__menu span {
